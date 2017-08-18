@@ -9,9 +9,9 @@ script:
 - npm test
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAIC3K5C6YMUCMO5FA
+  access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key:
-    secure: WyVL7stsCtvrSkxeYLsbDA1FBnQIFyrabqTx1brmRCqxcQVu6drJ3DiZXxMGRx7ONv7rW75oHvGeY5lzeUYCiAi4pvInLIfv7AchaA5PSlpYDmduWvnnfjlbtoMxqFUeJr0EX+O+68ZlRe4oAOYmAC/l4K/CYP6MpA5N37X/swLL+HNzGH3HIm62ZdTph7F6OOLw+jMRKF9fXSJGnUsf/ugEjSyLhF+plv+ZR4LB/zugDoxg657WxPg662Ba/HJalOdtJEC5l6onv37P5fudy6wAodOYI3YSnTq2OSYmIaM4IW2tK7mtw70rxJDeChnRWOurAHJWys2O67sMMC9a/ChFrQwC/PLrM1Yme7by90IMErX66kzdfs3BHeJB1Obb4l5XwoWbYdos3bRtN4rqJzlc1YItleF+ppVknre75GpeL1ecnBxfTn/kYi7KYWnb4cPzOXK1+JkMuKLGVOcDLGb+5mmkt3kRRb8Yw/RS/CqNZuqAwTt1IZR9JqANYQrpmauUEyr0pcRj54W/yQz2ajA7DCKekt54vBZwMuy0cmLVzigPxhZ1x0RYRMibgkywgZ7GvH1AXyq+FhhLck6HyDTBdKmxmNp74YvxMlbftfHlf5qZbde4jaIdSHBqbPCetoJwWiBqhjeqCeGYzwYVJaFoTAlnmDLtRfOfgyPkUvc=
+    secure: $AWS_SECRET_ACCESS_KEY
   region: us-east-1
   app: ryanwalters-resume
   env: RyanwaltersResume-env
