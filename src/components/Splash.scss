@@ -1,0 +1,19 @@
+
+.rw-splash {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+
+  .rw-name {
+    font-family: "Roboto Slab", serif;
+    font-size: 72px;
+  }
+
+  .rw-title {
+    background-color: #fff;
+    color: #000;
+    display: inline;
+    font-family: "Roboto Slab", serif;
+    padding: 5px 10px;
+  }
+}
